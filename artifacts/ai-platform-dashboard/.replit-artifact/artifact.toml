@@ -1,0 +1,31 @@
+kind = "data-app"
+previewPath = "/"
+title = "AI Dev Platforms Dashboard"
+version = "1.0.0"
+id = "artifacts/ai-platform-dashboard"
+router = "path"
+
+[[integratedSkills]]
+name = "data-visualization"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 22155
+
+[services.development]
+run = "pnpm --filter @workspace/ai-platform-dashboard run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/ai-platform-dashboard", "run", "build" ]
+publicDir = "artifacts/ai-platform-dashboard/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "22155"
+BASE_PATH = "/"

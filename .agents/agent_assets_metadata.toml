@@ -1,0 +1,25 @@
+uploads = []
+
+[[generated]]
+id = "xrNMfvpoZCsi1u2NDIboX"
+uri = "file://artifacts/ai-platforms-slides/public/hero-title.png"
+type = "image"
+title = "ai hero title"
+
+[[outputs]]
+id = "gIil_uJtu55u9YOs4GRPd"
+uri = "file://.local/outputs/AI-Dev-Platforms-2024-2026.pdf"
+type = "pdf"
+title = "AI Dev Platforms 2024–2026 (PDF)"
+
+[[outputs]]
+id = "2CYSiakfl_7duQtqCk3Eu"
+uri = "file://.local/outputs/AI-Dev-Platforms-2024-2026.pptx"
+type = "slides"
+title = "AI Dev Platforms 2024–2026 (PPTX)"
+
+[[outputs]]
+id = "lyWAku1VP9ItGuYrNawXB"
+uri = "file://auren-project.tar.gz"
+type = "unspecified"
+title = "AuRen Project - Full Source Code"

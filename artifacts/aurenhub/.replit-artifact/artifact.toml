@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/aurenhub/"
+title = "AuRenHub"
+version = "1.0.0"
+id = "artifacts/aurenhub"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/aurenhub/" ]
+localPort = 19113
+
+[services.development]
+run = "pnpm --filter @workspace/aurenhub run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/aurenhub", "run", "build" ]
+publicDir = "artifacts/aurenhub/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "19113"
+BASE_PATH = "/aurenhub/"

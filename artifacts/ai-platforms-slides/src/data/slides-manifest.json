@@ -1,0 +1,186 @@
+[
+  {
+    "id": "a1b2c3d4-0001-4e5f-a6b7-c8d9e0f1a2b3",
+    "position": 1,
+    "filepath": "src/pages/slides/Slide01Title.tsx",
+    "title": "Introduction",
+    "description": "Title slide — AuRen AI Dev Platforms 2024–2026 overview with API-style request/response",
+    "speakerNotes": "Welcome to AuRen — a comprehensive research report comparing 10 AI-autonomous development platforms. We cover autonomy, self-healing loops, and full-stack deployment capabilities across the 2024-2026 era."
+  },
+  {
+    "id": "a1b2c3d4-0002-4e5f-a6b7-c8d9e0f1a2b3",
+    "position": 2,
+    "filepath": "src/pages/slides/Slide02Landscape.tsx",
+    "title": "Platform Landscape",
+    "description": "Overview of all 10 platforms with type badges and key differentiators",
+    "speakerNotes": "The landscape spans from fully autonomous cloud agents like Devin, to open-source CLI tools like Codex CLI, to enterprise-grade assistants like Gemini Code Assist. Three major new platforms joined in 2025."
+  },
+  {
+    "id": "a1b2c3d4-0003-4e5f-a6b7-c8d9e0f1a2b3",
+    "position": 3,
+    "filepath": "src/pages/slides/Slide03Metrics.tsx",
+    "title": "Key Metrics",
+    "description": "Aggregate KPI stats across 10 platforms — self-healing count, open source, automation average",
+    "speakerNotes": "Key metrics: 10 platforms tracked, 3 open-source, 8 with self-healing loops, average automation level 8.3/10. The 2025 wave pushed open-source agent count from 1 to 3."
+  },
+  {
+    "id": "a1b2c3d4-0004-4e5f-a6b7-c8d9e0f1a2b3",
+    "position": 4,
+    "filepath": "src/pages/slides/Slide04Devin.tsx",
+    "title": "Devin AI",
+    "description": "Deep dive: Cognition's autonomous agent — first AI Software Engineer",
+    "speakerNotes": "Devin remains the benchmark for full autonomy at 10/10. Version 2.0 in 2025 added multi-agent team coordination and enterprise PR review automation."
+  },
+  {
+    "id": "a1b2c3d4-0005-4e5f-a6b7-c8d9e0f1a2b3",
+    "position": 5,
+    "filepath": "src/pages/slides/Slide05Copilot.tsx",
+    "title": "Copilot Workspace",
+    "description": "Deep dive: GitHub Copilot Workspace — Microsoft's issue-to-PR pipeline",
+    "speakerNotes": "Copilot Workspace differentiates through deep GitHub integration — turning issues directly into PRs with planning-first workflow. 1.8M enterprise subscribers as of 2025."
+  },
+  {
+    "id": "a1b2c3d4-0006-4e5f-a6b7-c8d9e0f1a2b3",
+    "position": 6,
+    "filepath": "src/pages/slides/Slide06Replit.tsx",
+    "title": "Replit Agent",
+    "description": "Deep dive: Replit Agent — full-stack prompt-to-deploy cloud IDE",
+    "speakerNotes": "Replit Agent uniquely serves non-developers with no-code interface while maintaining full-stack capability. One-click deploy with persistent NixOS runtime is unmatched."
+  },
+  {
+    "id": "a1b2c3d4-0007-4e5f-a6b7-c8d9e0f1a2b3",
+    "position": 7,
+    "filepath": "src/pages/slides/Slide07Cursor.tsx",
+    "title": "Cursor",
+    "description": "Deep dive: Cursor — local-first VS Code fork with multi-model AI",
+    "speakerNotes": "Cursor's 900K MAU in 2025 validates the local-first, developer-centric approach. Composer with multi-agent support and background cloud agents solidifies its enterprise position."
+  },
+  {
+    "id": "a1b2c3d4-0008-4e5f-a6b7-c8d9e0f1a2b3",
+    "position": 8,
+    "filepath": "src/pages/slides/Slide08Bolt.tsx",
+    "title": "Bolt.new",
+    "description": "Deep dive: Bolt.new — StackBlitz WebContainers full-stack in the browser",
+    "speakerNotes": "Bolt.new's multi-agent switchboard and 10M monthly users demonstrate that zero-setup browser-based development has gone mainstream. WebContainers technology is the key enabler."
+  },
+  {
+    "id": "a1b2c3d4-0009-4e5f-a6b7-c8d9e0f1a2b3",
+    "position": 9,
+    "filepath": "src/pages/slides/Slide09V0.tsx",
+    "title": "v0.dev",
+    "description": "Deep dive: v0.dev — Vercel's React/Next.js frontend generator",
+    "speakerNotes": "v0.dev occupies a clear niche: UI-first, image-to-code, Vercel ecosystem. Limited self-healing but unmatched for frontend velocity with Vercel deployment in one click."
+  },
+  {
+    "id": "a1b2c3d4-0010-4e5f-a6b7-c8d9e0f1a2b3",
+    "position": 10,
+    "filepath": "src/pages/slides/Slide10OpenClaw.tsx",
+    "title": "OpenClaw",
+    "description": "Deep dive: OpenClaw (AuRen) — self-hosted, privacy-first, MIT-licensed agent",
+    "speakerNotes": "OpenClaw (now branded AuRen) serves regulated industries requiring on-premise deployment. Multi-model routing with Ollama enables local LLM inference for maximum data privacy."
+  },
+  {
+    "id": "a1b2c3d4-0020-4e5f-a6b7-c8d9e0f1a2b3",
+    "position": 11,
+    "filepath": "src/pages/slides/Slide20ClaudeCode.tsx",
+    "title": "Claude Code",
+    "description": "NEW 2025: Anthropic Claude Code — terminal-native agent with constitutional AI and 200K context",
+    "speakerNotes": "Claude Code launched April 2025 and achieved the fastest enterprise adoption in Anthropic history. Constitutional AI safety guardrails are a first-in-class feature preventing insecure code generation."
+  },
+  {
+    "id": "a1b2c3d4-0021-4e5f-a6b7-c8d9e0f1a2b3",
+    "position": 12,
+    "filepath": "src/pages/slides/Slide21CodexCLI.tsx",
+    "title": "OpenAI Codex CLI",
+    "description": "NEW 2025: OpenAI Codex CLI — open-source terminal agent, 60K GitHub stars in 30 days",
+    "speakerNotes": "Codex CLI's MIT license and 60K GitHub stars in 30 days signal a massive shift toward open-source agentic tools. The sandboxed shell execution model is safe for production use."
+  },
+  {
+    "id": "a1b2c3d4-0022-4e5f-a6b7-c8d9e0f1a2b3",
+    "position": 13,
+    "filepath": "src/pages/slides/Slide22GeminiCode.tsx",
+    "title": "Gemini Code Assist",
+    "description": "NEW 2025: Google Gemini Code Assist — 1M token context, enterprise-grade GCP integration",
+    "speakerNotes": "Gemini Code Assist's 1M token context is a category-defining capability. Entire monorepos fit in a single context window, eliminating chunking errors and enabling truly holistic refactoring."
+  },
+  {
+    "id": "a1b2c3d4-0023-4e5f-a6b7-c8d9e0f1a2b3",
+    "position": 14,
+    "filepath": "src/pages/slides/Slide23MultiAgent2025.tsx",
+    "title": "The 2025 Agent Wave",
+    "description": "Analysis: How Claude Code, Codex CLI, and Gemini Code Assist reshaped the landscape in 2025",
+    "speakerNotes": "The 2025 wave brought agent specialization, open-source explosion, 1M context wars, and constitutional AI safety to production. These aren't incremental updates — they're category-defining shifts."
+  },
+  {
+    "id": "a1b2c3d4-0011-4e5f-a6b7-c8d9e0f1a2b3",
+    "position": 15,
+    "filepath": "src/pages/slides/Slide11Pipeline.tsx",
+    "title": "Pipeline",
+    "description": "Automation Pipeline — 5-stage Generate → Run → Detect → Patch → Rerun loop",
+    "speakerNotes": "The automation pipeline now spans 10 platforms with 9 supporting automated testing and 8 supporting full self-healing loops. The 2025 additions pushed coverage to near-universal."
+  },
+  {
+    "id": "a1b2c3d4-0012-4e5f-a6b7-c8d9e0f1a2b3",
+    "position": 16,
+    "filepath": "src/pages/slides/Slide12SelfHealing.tsx",
+    "title": "Self-Healing Loop",
+    "description": "Self-healing debug loop — mechanics, pseudocode, and verification pattern",
+    "speakerNotes": "Self-healing is now the baseline expectation. 8 of 10 platforms implement some form of detect-patch-verify loop, with constitutional AI guardrails emerging as the next differentiator."
+  },
+  {
+    "id": "a1b2c3d4-0013-4e5f-a6b7-c8d9e0f1a2b3",
+    "position": 17,
+    "filepath": "src/pages/slides/Slide13Features.tsx",
+    "title": "Feature Matrix",
+    "description": "9-dimension feature matrix comparing all 10 platforms side-by-side",
+    "speakerNotes": "The feature matrix shows clear segmentation: enterprise-grade (Devin, Bolt, OpenClaw) vs. specialist (Claude Code, Codex CLI) vs. UI-focused (v0.dev). No single platform wins every dimension."
+  },
+  {
+    "id": "a1b2c3d4-0014-4e5f-a6b7-c8d9e0f1a2b3",
+    "position": 18,
+    "filepath": "src/pages/slides/Slide14Comparison.tsx",
+    "title": "Comparison Scores",
+    "description": "Platform comparison scores across 6 dimensions with bar charts",
+    "speakerNotes": "Claude Code leads in Code Quality (10/10). Devin leads in Autonomy and Self-Healing. Gemini Code Assist leads in Collaboration and Infrastructure. Each platform has a distinct strength profile."
+  },
+  {
+    "id": "a1b2c3d4-0015-4e5f-a6b7-c8d9e0f1a2b3",
+    "position": 19,
+    "filepath": "src/pages/slides/Slide15Autonomy.tsx",
+    "title": "Autonomy Spectrum",
+    "description": "Four-level autonomy spectrum — where each platform sits from completion to full autonomy",
+    "speakerNotes": "The autonomy spectrum has shifted up. In 2024, only Devin sat at Level 4 (full autonomy). By 2026, Claude Code and Bolt.new operate at the same tier in specific domains."
+  },
+  {
+    "id": "a1b2c3d4-0016-4e5f-a6b7-c8d9e0f1a2b3",
+    "position": 20,
+    "filepath": "src/pages/slides/Slide16Deployment.tsx",
+    "title": "Deployment Models",
+    "description": "Three deployment models: Cloud SaaS, Embedded IDE, Self-Hosted",
+    "speakerNotes": "Self-hosted deployments grew from 1 platform (OpenClaw) to 3 (plus Codex CLI) in 2025. Privacy-first deployment is no longer a niche requirement — it's becoming enterprise standard."
+  },
+  {
+    "id": "a1b2c3d4-0017-4e5f-a6b7-c8d9e0f1a2b3",
+    "position": 21,
+    "filepath": "src/pages/slides/Slide17MultiAgent.tsx",
+    "title": "Multi-Agent Arch",
+    "description": "Multi-agent orchestration pattern — Planner, Coder, Tester, Reviewer roles",
+    "speakerNotes": "Multi-agent architectures are now supported by 6 of 10 platforms. The Planner → Coder → Tester → Reviewer pattern has emerged as the de facto standard for autonomous software engineering."
+  },
+  {
+    "id": "a1b2c3d4-0018-4e5f-a6b7-c8d9e0f1a2b3",
+    "position": 22,
+    "filepath": "src/pages/slides/Slide18Trends.tsx",
+    "title": "Trends 2024–2026",
+    "description": "Four defining trends across the AI-autonomous development era",
+    "speakerNotes": "The four mega-trends: Agent Emergence (2024), Self-Healing as Standard (2024-25), Multi-Model + Local LLMs (2025), Infra Provisioning as Feature (2025-26)."
+  },
+  {
+    "id": "a1b2c3d4-0019-4e5f-a6b7-c8d9e0f1a2b3",
+    "position": 23,
+    "filepath": "src/pages/slides/Slide19Takeaways.tsx",
+    "title": "Key Takeaways",
+    "description": "Three key takeaways — autonomy commoditization, data residency, frontend specialization",
+    "speakerNotes": "Three takeaways: 1) Autonomy is commoditizing — self-healing is now table stakes. 2) Data residency drives self-hosted adoption. 3) Frontend and full-stack are diverging into distinct platform categories."
+  }
+]

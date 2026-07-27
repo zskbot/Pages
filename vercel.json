@@ -1,0 +1,6 @@
+{
+  "framework": "vite",
+  "installCommand": "pnpm install --no-frozen-lockfile",
+  "buildCommand": "pnpm --filter @workspace/auren-workspace build",
+  "outputDirectory": "artifacts/auren-workspace/dist/public"
+}
