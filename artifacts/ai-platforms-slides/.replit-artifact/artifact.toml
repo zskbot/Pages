@@ -1,0 +1,31 @@
+kind = "slides"
+previewPath = "/ai-platforms-slides/"
+title = "AI Dev Platforms 2024–2026"
+version = "1.0.0"
+id = "artifacts/ai-platforms-slides"
+router = "path"
+
+[[integratedSkills]]
+name = "slides"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/ai-platforms-slides/" ]
+localPort = 26107
+
+[services.development]
+run = "pnpm --filter @workspace/ai-platforms-slides run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/ai-platforms-slides", "run", "build" ]
+publicDir = "artifacts/ai-platforms-slides/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "26107"
+BASE_PATH = "/ai-platforms-slides/"

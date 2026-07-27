@@ -1,0 +1,90 @@
+@import "tailwindcss";
+
+:root {
+  --slide-bg: #1A1B26;
+  --slide-code-bg: #16161E;
+  --slide-text: #C0CAF5;
+  --slide-blue: #7AA2F7;
+  --slide-green: #9ECE6A;
+  --slide-orange: #E0AF68;
+  --slide-red: #F7768E;
+  --slide-purple: #BB9AF7;
+  --slide-cyan: #7DCFFF;
+  --slide-muted: #565F89;
+  --slide-muted-text: #9AA5CE;
+  --font-body: "Inter", system-ui, sans-serif;
+  --font-mono: "DM Mono", "Fira Code", monospace;
+  color-scheme: dark;
+}
+
+html, body, #root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background: var(--slide-bg);
+  color: var(--slide-text);
+  font-family: var(--font-body);
+}
+
+.slide {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.slide-viewer {
+  touch-action: none;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* ── Mobile optimisation ── */
+@media (max-width: 767px) {
+  /* Hide sidebar on small screens */
+  [data-sidebar] {
+    display: none !important;
+  }
+
+  /* Scale slides to fit narrow viewports */
+  .slide,
+  [style*="100vw"][style*="100vh"] {
+    overflow-y: auto !important;
+    height: auto !important;
+    min-height: 100vh;
+  }
+
+  /* Shrink vw-based font sizes so they stay readable */
+  html {
+    font-size: clamp(10px, 3.5vw, 16px);
+  }
+
+  /* Sidebar brand logo in slides that inline the sidebar */
+  [style*="22vw"] {
+    width: 0 !important;
+    min-width: 0 !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+    border: none !important;
+  }
+
+  /* Give main content full width when sidebar is collapsed */
+  [style*="flex: 1"],
+  [style*="flex:1"] {
+    width: 100% !important;
+    padding-left: 4vw !important;
+    padding-right: 4vw !important;
+  }
+
+  /* Nav dots / controls at bottom */
+  .slide-nav {
+    bottom: 12px;
+    gap: 6px;
+  }
+  .slide-nav button {
+    width: 8px;
+    height: 8px;
+  }
+}

@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/workspace/"
+title = "AuRen Workspace"
+version = "1.0.0"
+id = "artifacts/auren-workspace"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/workspace/" ]
+localPort = 20860
+
+[services.development]
+run = "pnpm --filter @workspace/auren-workspace run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/auren-workspace", "run", "build" ]
+publicDir = "artifacts/auren-workspace/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "20860"
+BASE_PATH = "/workspace/"

@@ -1,0 +1,14 @@
+@layer theme, base, clerk, components, utilities;
+@import "tailwindcss";
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background: #080809;
+  color: #e8eaf2;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+input, button, textarea { font-family: inherit; }
+a { text-decoration: none; color: inherit; }

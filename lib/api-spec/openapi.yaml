@@ -1,0 +1,369 @@
+openapi: 3.1.0
+info:
+  title: Api
+  version: 0.2.0
+  description: AuRen AI Dev Platforms Research API
+servers:
+  - url: /api
+    description: Base API path
+tags:
+  - name: health
+    description: Health operations
+  - name: platforms
+    description: AI development platform data
+  - name: research
+    description: Research and analysis data
+paths:
+  /healthz:
+    get:
+      operationId: healthCheck
+      tags: [health]
+      summary: Health check
+      description: Returns server health status
+      responses:
+        "200":
+          description: Healthy
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/HealthStatus"
+
+  /platforms:
+    get:
+      operationId: getPlatforms
+      tags: [platforms]
+      summary: Get all AI dev platforms
+      description: Returns list of AI development platforms with metadata
+      responses:
+        "200":
+          description: List of platforms
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Platform"
+
+  /platforms/comparison:
+    get:
+      operationId: getPlatformsComparison
+      tags: [platforms]
+      summary: Get platform comparison scores
+      description: Returns radar chart data for platform comparison
+      responses:
+        "200":
+          description: Platform comparison data
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/PlatformComparison"
+
+  /platforms/features:
+    get:
+      operationId: getPlatformFeatures
+      tags: [platforms]
+      summary: Get feature matrix
+      description: Returns feature matrix for all platforms
+      responses:
+        "200":
+          description: Feature matrix data
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/FeatureMatrix"
+
+  /platforms/summary:
+    get:
+      operationId: getPlatformsSummary
+      tags: [platforms]
+      summary: Get dashboard summary KPIs
+      description: Returns summary statistics for the dashboard
+      responses:
+        "200":
+          description: Summary stats
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/DashboardSummary"
+
+  /platforms/trending:
+    get:
+      operationId: getPlatformsTrending
+      tags: [platforms]
+      summary: Get trending platforms by growth score
+      description: Returns platforms ranked by adoption growth score for 2025–2026
+      responses:
+        "200":
+          description: Trending platform data
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/TrendingPlatform"
+
+  /research/self-healing:
+    get:
+      operationId: getSelfHealingData
+      tags: [research]
+      summary: Get self-healing loop data
+      description: Returns self-healing debug loop mechanisms for each platform
+      responses:
+        "200":
+          description: Self-healing data
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/SelfHealingEntry"
+
+  /research/automation-pipeline:
+    get:
+      operationId: getAutomationPipeline
+      tags: [research]
+      summary: Get automation pipeline stages
+      description: Returns automation pipeline stage data across platforms
+      responses:
+        "200":
+          description: Pipeline data
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/PipelineStage"
+
+  /research/news:
+    get:
+      operationId: getResearchNews
+      tags: [research]
+      summary: Get AI platform news feed
+      description: Returns curated news and developments for AI dev platforms 2024–2026
+      responses:
+        "200":
+          description: News items
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/NewsItem"
+
+components:
+  schemas:
+    HealthStatus:
+      type: object
+      properties:
+        status:
+          type: string
+      required:
+        - status
+
+    Platform:
+      type: object
+      required:
+        - id
+        - name
+        - company
+        - type
+        - description
+        - keyDifferentiator
+        - openSource
+        - selfHosted
+        - automationLevel
+        - deploymentType
+      properties:
+        id:
+          type: string
+        name:
+          type: string
+        company:
+          type: string
+        type:
+          type: string
+        description:
+          type: string
+        keyDifferentiator:
+          type: string
+        openSource:
+          type: boolean
+        selfHosted:
+          type: boolean
+        automationLevel:
+          type: integer
+        deploymentType:
+          type: string
+
+    PlatformComparison:
+      type: object
+      required:
+        - platform
+        - autonomy
+        - codeQuality
+        - infrastructure
+        - selfHealing
+        - deploymentEase
+        - collaboration
+      properties:
+        platform:
+          type: string
+        autonomy:
+          type: integer
+        codeQuality:
+          type: integer
+        infrastructure:
+          type: integer
+        selfHealing:
+          type: integer
+        deploymentEase:
+          type: integer
+        collaboration:
+          type: integer
+
+    FeatureMatrix:
+      type: object
+      required:
+        - platform
+        - autoTesting
+        - selfHealing
+        - ciCdIntegration
+        - multiAgent
+        - infraProvisioning
+        - oneClickDeploy
+        - noCodeInterface
+        - openSource
+        - multiModel
+      properties:
+        platform:
+          type: string
+        autoTesting:
+          type: boolean
+        selfHealing:
+          type: boolean
+        ciCdIntegration:
+          type: boolean
+        multiAgent:
+          type: boolean
+        infraProvisioning:
+          type: boolean
+        oneClickDeploy:
+          type: boolean
+        noCodeInterface:
+          type: boolean
+        openSource:
+          type: boolean
+        multiModel:
+          type: boolean
+
+    DashboardSummary:
+      type: object
+      required:
+        - totalPlatforms
+        - openSourceCount
+        - selfHostedCount
+        - avgAutomationLevel
+        - fullPipelineCount
+      properties:
+        totalPlatforms:
+          type: integer
+        openSourceCount:
+          type: integer
+        selfHostedCount:
+          type: integer
+        avgAutomationLevel:
+          type: number
+        fullPipelineCount:
+          type: integer
+
+    TrendingPlatform:
+      type: object
+      required:
+        - platform
+        - growthScore
+        - trend
+        - note
+      properties:
+        platform:
+          type: string
+        growthScore:
+          type: integer
+        trend:
+          type: string
+        note:
+          type: string
+
+    SelfHealingEntry:
+      type: object
+      required:
+        - platform
+        - loopStructure
+        - errorDetection
+        - patchingMethod
+        - stoppingCondition
+        - iterationsTypical
+        - hasWatchdog
+      properties:
+        platform:
+          type: string
+        loopStructure:
+          type: string
+        errorDetection:
+          type: string
+        patchingMethod:
+          type: string
+        stoppingCondition:
+          type: string
+        iterationsTypical:
+          type: integer
+        hasWatchdog:
+          type: boolean
+
+    PipelineStage:
+      type: object
+      required:
+        - stage
+        - description
+        - platformCount
+        - platforms
+      properties:
+        stage:
+          type: string
+        description:
+          type: string
+        platformCount:
+          type: integer
+        platforms:
+          type: array
+          items:
+            type: string
+
+    NewsItem:
+      type: object
+      required:
+        - id
+        - date
+        - platform
+        - headline
+        - summary
+        - tag
+        - impact
+      properties:
+        id:
+          type: string
+        date:
+          type: string
+        platform:
+          type: string
+        headline:
+          type: string
+        summary:
+          type: string
+        tag:
+          type: string
+        impact:
+          type: string

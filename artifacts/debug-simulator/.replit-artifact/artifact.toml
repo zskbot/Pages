@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/simulator/"
+title = "Debug Loop Simulator"
+version = "1.0.0"
+id = "artifacts/debug-simulator"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/simulator/" ]
+localPort = 21601
+
+[services.development]
+run = "pnpm --filter @workspace/debug-simulator run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/debug-simulator", "run", "build" ]
+publicDir = "artifacts/debug-simulator/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "21601"
+BASE_PATH = "/simulator/"
